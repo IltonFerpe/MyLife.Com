@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		F69A8CDA2AF93F45006CBF72 /* MyLife_ComApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A8CD92AF93F45006CBF72 /* MyLife_ComApp.swift */; };
-		F69A8CDC2AF93F45006CBF72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A8CDB2AF93F45006CBF72 /* ContentView.swift */; };
 		F69A8CDE2AF93F47006CBF72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F69A8CDD2AF93F47006CBF72 /* Assets.xcassets */; };
 		F69A8CE12AF93F47006CBF72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F69A8CE02AF93F47006CBF72 /* Preview Assets.xcassets */; };
+		F69A8CEC2AF93FA9006CBF72 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A8CEB2AF93FA9006CBF72 /* SplashView.swift */; };
+		F69A8CEE2AF93FF8006CBF72 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69A8CED2AF93FF8006CBF72 /* SplashViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F69A8CD62AF93F45006CBF72 /* MyLife.Com.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLife.Com.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69A8CD92AF93F45006CBF72 /* MyLife_ComApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLife_ComApp.swift; sourceTree = "<group>"; };
-		F69A8CDB2AF93F45006CBF72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F69A8CDD2AF93F47006CBF72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F69A8CE02AF93F47006CBF72 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F69A8CEB2AF93FA9006CBF72 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		F69A8CED2AF93FF8006CBF72 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,8 @@
 		F69A8CD82AF93F45006CBF72 /* MyLife.Com */ = {
 			isa = PBXGroup;
 			children = (
+				F69A8CE72AF93F78006CBF72 /* Splash */,
 				F69A8CD92AF93F45006CBF72 /* MyLife_ComApp.swift */,
-				F69A8CDB2AF93F45006CBF72 /* ContentView.swift */,
 				F69A8CDD2AF93F47006CBF72 /* Assets.xcassets */,
 				F69A8CDF2AF93F47006CBF72 /* Preview Content */,
 			);
@@ -65,6 +67,39 @@
 				F69A8CE02AF93F47006CBF72 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F69A8CE72AF93F78006CBF72 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				F69A8CEA2AF93F93006CBF72 /* Model */,
+				F69A8CE92AF93F89006CBF72 /* ViewModel */,
+				F69A8CE82AF93F83006CBF72 /* View */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		F69A8CE82AF93F83006CBF72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F69A8CEB2AF93FA9006CBF72 /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F69A8CE92AF93F89006CBF72 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F69A8CED2AF93FF8006CBF72 /* SplashViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F69A8CEA2AF93F93006CBF72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F69A8CDC2AF93F45006CBF72 /* ContentView.swift in Sources */,
+				F69A8CEE2AF93FF8006CBF72 /* SplashViewModel.swift in Sources */,
 				F69A8CDA2AF93F45006CBF72 /* MyLife_ComApp.swift in Sources */,
+				F69A8CEC2AF93FA9006CBF72 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +315,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +344,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

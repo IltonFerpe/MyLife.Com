@@ -11,7 +11,7 @@ import SwiftUI
 struct MyLife_ComApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView()
         }
     }
 }
